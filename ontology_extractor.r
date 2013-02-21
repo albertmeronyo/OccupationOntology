@@ -18,7 +18,7 @@ df <- df[-grep("Totaal*", df$V5),]
 df <- df[-grep("totaal*", df$V5),]
 
 # Remove tailing rows
-df <- df[-(nrow(df)-10):-nrow(df),]
+df <- df[-(nrow(df)-9):-nrow(df),]
 
 # Write output to file
 write.table(df,file="repos/OccupationOntology/output/BRT_1889_02_T1.csv",sep=",",row.names=F)
